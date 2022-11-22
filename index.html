@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+    <div class="marquee">
+        <div class="track">
+            <div class="content"></div>&nbsp; Nguyễn Đình Hải B19DCDT043
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="row-flex-first">
+        <div class="col" id="nhietDo" style="background: rgb(139, 54, 38);">
+            <h2>NHIỆT ĐỘ</h2>
+            <p id="randomNhietDo" onchange="fsRandomNhietDo()">92 °C</p>
+        </div>
+        <div class="col" id="doAm" style="background: rgb(175, 238, 238);">
+            <h2>ĐỘ ẨM</h2>
+            <p id="randomDoAm" onchange="fsRandomDoAm()">34 %</p>
+        </div>
+        <div class="col" id="anhSang" style="background: rgb(0, 255, 127);">
+            <h2>ÁNH SÁNG</h2>
+            <p id="randomAnhSang" onchange="fsRandomAnhSang()">50 lux</p>
+        </div>
+    </div>
+    </div>
+    <div class="row">
+        <div class="col-8">
+
+            <script src="https://code.highcharts.com/highcharts.js"></script>
+            <script src="https://code.highcharts.com/modules/series-label.js"></script>
+            <script src="https://code.highcharts.com/modules/exporting.js"></script>
+            <script src="https://code.highcharts.com/modules/export-data.js"></script>
+            <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+            <figure class="highcharts-figure">
+                <div id="container" aria-hidden="false" role="region"
+                    aria-label="BIỂU ĐỒ NHIỆT ĐỘ, ĐỘ ẨM, ÁNH SÁNG TẠI HÀ NỘI NĂM 2022. Highcharts interactive chart."
+                    style="overflow: hidden;" data-highcharts-chart="562">
+                    <div id="highcharts-screen-reader-region-before-562" style="position: relative;"
+                        aria-hidden="false">
+                        <div aria-hidden="false"
+                            style="position: absolute; width: 1px; height: 1px; overflow: hidden; white-space: nowrap; clip: rect(1px, 1px, 1px, 1px); margin-top: -3px; opacity: 0.01;">
+                            <p>BIỂU ĐỒ NHIỆT ĐỘ, ĐỘ ẨM, ÁNH SÁNG TẠI HÀ NỘI NĂM 2022</p>
+                            <div>Line chart with 3 lines.</div>
+                            <div><button id="hc-linkto-highcharts-data-table-562" tabindex="-1"
+                                    aria-expanded="false">View as data table, BIỂU ĐỒ NHIỆT ĐỘ, ĐỘ ẨM, ÁNH SÁNG
+                                    TẠI HÀ NỘI NĂM 2022</button></div>
+                            <div>The chart has 1 X axis displaying categories. </div>
+                            <div>The chart has 1 Y axis displaying Values. Data ranges from 1 to 99.</div>
+                        </div>
+                    </div>
+                    <div aria-hidden="false" class="highcharts-announcer-container" style="position: relative;">
+                        <div aria-hidden="false" aria-live="polite"
+                            style="position: absolute; width: 1px; height: 1px; overflow: hidden; white-space: nowrap; clip: rect(1px, 1px, 1px, 1px); margin-top: -3px; opacity: 0.01;">
+                        </div>
+                        <div aria-hidden="false" aria-live="assertive"
+                            style="position: absolute; width: 1px; height: 1px; overflow: hidden; white-space: nowrap; clip: rect(1px, 1px, 1px, 1px); margin-top: -3px; opacity: 0.01;">
+                        </div>
+                        <div aria-hidden="false" aria-live="polite"
+                            style="position: absolute; width: 1px; height: 1px; overflow: hidden; white-space: nowrap; clip: rect(1px, 1px, 1px, 1px); margin-top: -3px; opacity: 0.01;">
+                        </div>
+                    </div>
+                    <div id="highcharts-3l70pak-23042"
+                        style="position: relative; overflow: hidden; width: 765px; height: 800px; text-align: left; line-height: normal; z-index: 0; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); user-select: none; touch-action: manipulation; outline: none;"
+                        dir="ltr" class="highcharts-container " aria-hidden="false" tabindex="0">
+                        <div aria-hidden="false" class="highcharts-a11y-proxy-container-before"
+                            style="top: 0px; left: 0px; white-space: nowrap; position: absolute;"></div><svg
+                            version="1.1" class="highcharts-root"
+                            style="font-family: &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif; font-size: 12px;"
+                            xmlns="http://www.w3.org/2000/svg" width="765" height="800" viewBox="0 0 765 800"
+                            aria-hidden="false" aria-label="Interactive chart">
+                            <desc aria-hidden="true">Created with Highcharts 10.3.1</desc>
+                            <defs aria-hidden="true">
+                                <clipPath id="highcharts-3l70pak-23043-">
+                                    <rect x="0" y="0" width="680" height="672" fill="none"></rect>
+                                </clipPath>
+                                <clipPath id="highcharts-3l70pak-23056-">
+                                    <rect x="0" y="0" width="680" height="672" fill="none"></rect>
+                                </clipPath>
+                            </defs>
+                            <rect fill="#ffffff" class="highcharts-background" x="0" y="0" width="765" height="800"
+                                rx="0" ry="0" aria-hidden="true"></rect>
+                            <rect fill="none" class="highcharts-plot-background" x="75" y="53" width="680" height="672"
+                                aria-hidden="true"></rect>
+                            <g class="highcharts-grid highcharts-xaxis-grid" data-z-index="1" aria-hidden="true">
+                                <path fill="none" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line"
+                                    d="M 131.5 53 L 131.5 725" opacity="1"></path>
+                                <path fill="none" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line"
+                                    d="M 187.5 53 L 187.5 725" opacity="1"></path>
+                                <path fill="none" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line"
+                                    d="M 244.5 53 L 244.5 725" opacity="1"></path>
+                                <path fill="none" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line"
+                                    d="M 301.5 53 L 301.5 725" opacity="1"></path>
+                                <path fill="none" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line"
+                                    d="M 357.5 53 L 357.5 725" opacity="1"></path>
+                                <path fill="none" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line"
+                                    d="M 414.5 53 L 414.5 725" opacity="1"></path>
+                                <path fill="none" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line"
+                                    d="M 471.5 53 L 471.5 725" opacity="1"></path>
+                                <path fill="none" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line"
+                                    d="M 527.5 53 L 527.5 725" opacity="1"></path>
+                                <path fill="none" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line"
+                                    d="M 584.5 53 L 584.5 725" opacity="1"></path>
+                                <path fill="none" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line"
+                                    d="M 641.5 53 L 641.5 725" opacity="1"></path>
+                                <path fill="none" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line"
+                                    d="M 697.5 53 L 697.5 725" opacity="1"></path>
+                                <path fill="none" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line"
+                                    d="M 754.5 53 L 754.5 725" opacity="1"></path>
+                                <path fill="none" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line"
+                                    d="M 74.5 53 L 74.5 725" opacity="1"></path>
+                            </g>
+                            <g class="highcharts-grid highcharts-yaxis-grid" data-z-index="1" aria-hidden="true">
+                                <path fill="none" stroke="#e6e6e6" stroke-width="1" stroke-dasharray="none"
+                                    data-z-index="1" class="highcharts-grid-line" d="M 75 725.5 L 755 725.5"
+                                    opacity="1"></path>
+                                <path fill="none" stroke="#e6e6e6" stroke-width="1" stroke-dasharray="none"
+                                    data-z-index="1" class="highcharts-grid-line" d="M 75 658.5 L 755 658.5"
+                                    opacity="1"></path>
+                                <path fill="none" stroke="#e6e6e6" stroke-width="1" stroke-dasharray="none"
+                                    data-z-index="1" class="highcharts-grid-line" d="M 75 591.5 L 755 591.5"
+                                    opacity="1"></path>
+                                <path fill="none" stroke="#e6e6e6" stroke-width="1" stroke-dasharray="none"
+                                    data-z-index="1" class="highcharts-grid-line" d="M 75 523.5 L 755 523.5"
+                                    opacity="1"></path>
+                                <path fill="none" stroke="#e6e6e6" stroke-width="1" stroke-dasharray="none"
+                                    data-z-index="1" class="highcharts-grid-line" d="M 75 456.5 L 755 456.5"
+                                    opacity="1"></path>
+                                <path fill="none" stroke="#e6e6e6" stroke-width="1" stroke-dasharray="none"
+                                    data-z-index="1" class="highcharts-grid-line" d="M 75 389.5 L 755 389.5"
+                                    opacity="1"></path>
+                                <path fill="none" stroke="#e6e6e6" stroke-width="1" stroke-dasharray="none"
+                                    data-z-index="1" class="highcharts-grid-line" d="M 75 322.5 L 755 322.5"
+                                    opacity="1"></path>
+                                <path fill="none" stroke="#e6e6e6" stroke-width="1" stroke-dasharray="none"
+                                    data-z-index="1" class="highcharts-grid-line" d="M 75 255.5 L 755 255.5"
+                                    opacity="1"></path>
+                                <path fill="none" stroke="#e6e6e6" stroke-width="1" stroke-dasharray="none"
+                                    data-z-index="1" class="highcharts-grid-line" d="M 75 187.5 L 755 187.5"
+                                    opacity="1"></path>
+                                <path fill="none" stroke="#e6e6e6" stroke-width="1" stroke-dasharray="none"
+                                    data-z-index="1" class="highcharts-grid-line" d="M 75 120.5 L 755 120.5"
+                                    opacity="1"></path>
+                                <path fill="none" stroke="#e6e6e6" stroke-width="1" stroke-dasharray="none"
+                                    data-z-index="1" class="highcharts-grid-line" d="M 75 52.5 L 755 52.5" opacity="1">
+                                </path>
+                            </g>
+                            <rect fill="none" class="highcharts-plot-border" data-z-index="1" x="75" y="53" width="680"
+                                height="672" aria-hidden="true"></rect>
+                            <g class="highcharts-axis highcharts-xaxis" data-z-index="2" aria-hidden="true">
+                                <path fill="none" class="highcharts-axis-line" stroke="#ccd6eb" stroke-width="1"
+                                    data-z-index="7" d="M 75 725.5 L 755 725.5"></path>
+                            </g>
+                            <g class="highcharts-axis highcharts-yaxis" data-z-index="2" aria-hidden="true"><text
+                                    x="26.488866806030273" data-z-index="7" text-anchor="middle"
+                                    transform="translate(0,0) rotate(270 26.488866806030273 389)"
+                                    class="highcharts-axis-title"
+                                    style="color: rgb(102, 102, 102); fill: rgb(102, 102, 102);" y="389">Values</text>
+                                <path fill="none" class="highcharts-axis-line" data-z-index="7" d="M 75 53 L 75 725">
+                                </path>
+                            </g>
+                            <g class="highcharts-series-group" data-z-index="3" aria-hidden="false">
+                                <g class="highcharts-series highcharts-series-0 highcharts-line-series"
+                                    data-z-index="0.1" opacity="1" transform="translate(75,53) scale(1 1)"
+                                    clip-path="url(#highcharts-3l70pak-23056-)" aria-hidden="true">
+                                    <path fill="none"
+                                        d="M 28.333333333333 369.6 L 85 208.32 L 141.66666666666 497.28 L 198.33333333333 302.4 L 255 665.28 L 311.66666666666 530.88 L 368.33333333333 107.51999999999998 L 425 329.28 L 481.66666666666 430.08000000000004 L 538.33333333333 188.16000000000003 L 595 288.96 L 651.66666666666 53.75999999999999"
+                                        class="highcharts-graph" data-z-index="1" stroke="red" stroke-width="2"
+                                        stroke-linejoin="round" stroke-linecap="round"></path>
+                                    <path fill="none"
+                                        d="M 28.333333333333 369.6 L 85 208.32 L 141.66666666666 497.28 L 198.33333333333 302.4 L 255 665.28 L 311.66666666666 530.88 L 368.33333333333 107.51999999999998 L 425 329.28 L 481.66666666666 430.08000000000004 L 538.33333333333 188.16000000000003 L 595 288.96 L 651.66666666666 53.75999999999999"
+                                        data-z-index="2" class="highcharts-tracker-line" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke="rgba(192,192,192,0.0001)" stroke-width="22">
+                                    </path>
+                                </g>
+                                <g class="highcharts-markers highcharts-series-0 highcharts-line-series highcharts-tracker"
+                                    data-z-index="0.1" opacity="1" transform="translate(75,53) scale(1 1)"
+                                    clip-path="none" aria-hidden="false" role="region" tabindex="-1"
+                                    aria-label="Nhiệt độ, line 1 of 3 with 12 data points." style="outline: none;">
+                                    <path fill="red" d="M 28 374 A 4 4 0 1 1 28.003999999333335 373.9999980000002 Z"
+                                        opacity="1" class="highcharts-point" tabindex="-1" role="img"
+                                        aria-label="Jan, 45. Nhiệt độ." style="outline: none;"></path>
+                                    <path fill="red" d="M 85 212 A 4 4 0 1 1 85.00399999933333 211.99999800000018 Z"
+                                        opacity="1" class="highcharts-point" tabindex="-1" role="img"
+                                        aria-label="Feb, 69. Nhiệt độ." style="outline: none;"></path>
+                                    <path fill="red" d="M 141 501 A 4 4 0 1 1 141.00399999933333 500.9999980000002 Z"
+                                        opacity="1" class="highcharts-point" tabindex="-1" role="img"
+                                        aria-label="Mar, 26. Nhiệt độ." style="outline: none;"></path>
+                                    <path fill="red" d="M 198 306 A 4 4 0 1 1 198.00399999933333 305.9999980000002 Z"
+                                        opacity="1" class="highcharts-point" tabindex="-1" role="img"
+                                        aria-label="Apr, 55. Nhiệt độ." style="outline: none;"></path>
+                                    <path fill="red" d="M 255 669 A 4 4 0 1 1 255.00399999933333 668.9999980000001 Z"
+                                        opacity="1" class="highcharts-point" tabindex="-1" role="img"
+                                        aria-label="May, 1. Nhiệt độ." style="outline: none;"></path>
+                                    <path fill="red" d="M 311 535 A 4 4 0 1 1 311.00399999933336 534.9999980000001 Z"
+                                        opacity="1" class="highcharts-point" tabindex="-1" role="img"
+                                        aria-label="Jun, 21. Nhiệt độ." style="outline: none;"></path>
+                                    <path fill="red" d="M 368 112 A 4 4 0 1 1 368.00399999933336 111.99999800000016 Z"
+                                        opacity="1" class="highcharts-point" tabindex="-1" role="img"
+                                        aria-label="Jul, 84. Nhiệt độ." style="outline: none;"></path>
+                                    <path fill="red" d="M 425 333 A 4 4 0 1 1 425.00399999933336 332.9999980000002 Z"
+                                        opacity="1" class="highcharts-point" tabindex="-1" role="img"
+                                        aria-label="Aug, 51. Nhiệt độ." style="outline: none;"></path>
+                                    <path fill="red" d="M 481 434 A 4 4 0 1 1 481.00399999933336 433.9999980000002 Z"
+                                        opacity="1" class="highcharts-point" tabindex="-1" role="img"
+                                        aria-label="Sep, 36. Nhiệt độ." style="outline: none;"></path>
+                                    <path fill="red" d="M 538 192 A 4 4 0 1 1 538.0039999993334 191.99999800000018 Z"
+                                        opacity="1" class="highcharts-point" tabindex="-1" role="img"
+                                        aria-label="Oct, 72. Nhiệt độ." style="outline: none;"></path>
+                                    <path fill="red" d="M 595 293 A 4 4 0 1 1 595.0039999993334 292.9999980000002 Z"
+                                        opacity="1" class="highcharts-point" tabindex="-1" role="img"
+                                        aria-label="Nov, 57. Nhiệt độ." style="outline: none;"></path>
+                                    <path fill="red" d="M 651 58 A 4 4 0 1 1 651.0039999993334 57.99999800000017 Z"
+                                        opacity="1" class="highcharts-point" tabindex="-1" role="img"
+                                        aria-label="Dec, 92. Nhiệt độ." style="outline: none;"></path>
+                                </g>
+                                <g class="highcharts-series highcharts-series-1 highcharts-line-series"
+                                    data-z-index="0.1" opacity="1" transform="translate(75,53) scale(1 1)"
+                                    clip-path="url(#highcharts-3l70pak-23056-)" aria-hidden="true">
+                                    <path fill="none"
+                                        d="M 28.333333333333 315.84 L 85 168 L 141.66666666666 524.16 L 198.33333333333 228.48000000000002 L 255 154.55999999999995 L 311.66666666666 409.92 L 368.33333333333 6.720000000000027 L 425 6.720000000000027 L 481.66666666666 228.48000000000002 L 538.33333333333 544.3199999999999 L 595 107.51999999999998 L 651.66666666666 443.52"
+                                        class="highcharts-graph" data-z-index="1" stroke="darkBlue" stroke-width="2"
+                                        stroke-linejoin="round" stroke-linecap="round"></path>
+                                    <path fill="none"
+                                        d="M 28.333333333333 315.84 L 85 168 L 141.66666666666 524.16 L 198.33333333333 228.48000000000002 L 255 154.55999999999995 L 311.66666666666 409.92 L 368.33333333333 6.720000000000027 L 425 6.720000000000027 L 481.66666666666 228.48000000000002 L 538.33333333333 544.3199999999999 L 595 107.51999999999998 L 651.66666666666 443.52"
+                                        data-z-index="2" class="highcharts-tracker-line" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke="rgba(192,192,192,0.0001)" stroke-width="22">
+                                    </path>
+                                </g>
+                                <g class="highcharts-markers highcharts-series-1 highcharts-line-series highcharts-tracker"
+                                    data-z-index="0.1" opacity="1" transform="translate(75,53) scale(1 1)"
+                                    clip-path="none" aria-hidden="false" role="region" tabindex="-1"
+                                    aria-label="Độ ẩm, line 2 of 3 with 12 data points." style="outline: none;">
+                                    <path fill="darkBlue" d="M 28 312 L 32 316 L 28 320 L 24 316 Z" opacity="1"
+                                        class="highcharts-point" tabindex="-1" role="img" aria-label="Jan, 53. Độ ẩm."
+                                        style="outline: none;"></path>
+                                    <path fill="darkBlue" d="M 85 164 L 89 168 L 85 172 L 81 168 Z" opacity="1"
+                                        class="highcharts-point" tabindex="-1" role="img" aria-label="Feb, 75. Độ ẩm."
+                                        style="outline: none;"></path>
+                                    <path fill="darkBlue" d="M 141 520 L 145 524 L 141 528 L 137 524 Z" opacity="1"
+                                        class="highcharts-point" tabindex="-1" role="img" aria-label="Mar, 22. Độ ẩm."
+                                        style="outline: none;"></path>
+                                    <path fill="darkBlue" d="M 198 224 L 202 228 L 198 232 L 194 228 Z" opacity="1"
+                                        class="highcharts-point" tabindex="-1" role="img" aria-label="Apr, 66. Độ ẩm."
+                                        style="outline: none;"></path>
+                                    <path fill="darkBlue" d="M 255 151 L 259 155 L 255 159 L 251 155 Z" opacity="1"
+                                        class="highcharts-point" tabindex="-1" role="img" aria-label="May, 77. Độ ẩm."
+                                        style="outline: none;"></path>
+                                    <path fill="darkBlue" d="M 311 406 L 315 410 L 311 414 L 307 410 Z" opacity="1"
+                                        class="highcharts-point" tabindex="-1" role="img" aria-label="Jun, 39. Độ ẩm."
+                                        style="outline: none;"></path>
+                                    <path fill="darkBlue" d="M 368 3 L 372 7 L 368 11 L 364 7 Z" opacity="1"
+                                        class="highcharts-point" tabindex="-1" role="img" aria-label="Jul, 99. Độ ẩm."
+                                        style="outline: none;"></path>
+                                    <path fill="darkBlue" d="M 425 3 L 429 7 L 425 11 L 421 7 Z" opacity="1"
+                                        class="highcharts-point" tabindex="-1" role="img" aria-label="Aug, 99. Độ ẩm."
+                                        style="outline: none;"></path>
+                                    <path fill="darkBlue" d="M 481 224 L 485 228 L 481 232 L 477 228 Z" opacity="1"
+                                        class="highcharts-point" tabindex="-1" role="img" aria-label="Sep, 66. Độ ẩm."
+                                        style="outline: none;"></path>
+                                    <path fill="darkBlue" d="M 538 540 L 542 544 L 538 548 L 534 544 Z" opacity="1"
+                                        class="highcharts-point" tabindex="-1" role="img" aria-label="Oct, 19. Độ ẩm."
+                                        style="outline: none;"></path>
+                                    <path fill="darkBlue" d="M 595 104 L 599 108 L 595 112 L 591 108 Z" opacity="1"
+                                        class="highcharts-point" tabindex="-1" role="img" aria-label="Nov, 84. Độ ẩm."
+                                        style="outline: none;"></path>
+                                    <path fill="darkBlue" d="M 651 440 L 655 444 L 651 448 L 647 444 Z" opacity="1"
+                                        class="highcharts-point" tabindex="-1" role="img" aria-label="Dec, 34. Độ ẩm."
+                                        style="outline: none;"></path>
+                                </g>
+                                <g class="highcharts-series highcharts-series-2 highcharts-line-series"
+                                    data-z-index="0.1" opacity="1" transform="translate(75,53) scale(1 1)"
+                                    clip-path="url(#highcharts-3l70pak-23056-)" aria-hidden="true">
+                                    <path fill="none"
+                                        d="M 28.333333333333 416.64 L 85 624.96 L 141.66666666666 255.36 L 198.33333333333 342.72 L 255 631.68 L 311.66666666666 94.08000000000004 L 368.33333333333 470.4 L 425 557.76 L 481.66666666666 598.08 L 538.33333333333 329.28 L 595 470.4 L 651.66666666666 336"
+                                        class="highcharts-graph" data-z-index="1" stroke="gold" stroke-width="2"
+                                        stroke-linejoin="round" stroke-linecap="round"></path>
+                                    <path fill="none"
+                                        d="M 28.333333333333 416.64 L 85 624.96 L 141.66666666666 255.36 L 198.33333333333 342.72 L 255 631.68 L 311.66666666666 94.08000000000004 L 368.33333333333 470.4 L 425 557.76 L 481.66666666666 598.08 L 538.33333333333 329.28 L 595 470.4 L 651.66666666666 336"
+                                        data-z-index="2" class="highcharts-tracker-line" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke="rgba(192,192,192,0.0001)" stroke-width="22">
+                                    </path>
+                                </g>
+                                <g class="highcharts-markers highcharts-series-2 highcharts-line-series highcharts-tracker"
+                                    data-z-index="0.1" opacity="1" transform="translate(75,53) scale(1 1)"
+                                    clip-path="none" aria-hidden="false" role="region" tabindex="-1"
+                                    aria-label="Ánh sáng, line 3 of 3 with 12 data points." style="outline: none;">
+                                    <path fill="gold" d="M 24 413 L 32 413 L 32 421 L 24 421 Z" opacity="1"
+                                        class="highcharts-point" tabindex="-1" role="img"
+                                        aria-label="Jan, 38. Ánh sáng." style="outline: none;"></path>
+                                    <path fill="gold" d="M 81 621 L 89 621 L 89 629 L 81 629 Z" opacity="1"
+                                        class="highcharts-point" tabindex="-1" role="img" aria-label="Feb, 7. Ánh sáng."
+                                        style="outline: none;"></path>
+                                    <path fill="gold" d="M 137 251 L 145 251 L 145 259 L 137 259 Z" opacity="1"
+                                        class="highcharts-point" tabindex="-1" role="img"
+                                        aria-label="Mar, 62. Ánh sáng." style="outline: none;"></path>
+                                    <path fill="gold" d="M 194 339 L 202 339 L 202 347 L 194 347 Z" opacity="1"
+                                        class="highcharts-point" tabindex="-1" role="img"
+                                        aria-label="Apr, 49. Ánh sáng." style="outline: none;"></path>
+                                    <path fill="gold" d="M 251 628 L 259 628 L 259 636 L 251 636 Z" opacity="1"
+                                        class="highcharts-point" tabindex="-1" role="img" aria-label="May, 6. Ánh sáng."
+                                        style="outline: none;"></path>
+                                    <path fill="gold" d="M 307 90 L 315 90 L 315 98 L 307 98 Z" opacity="1"
+                                        class="highcharts-point" tabindex="-1" role="img"
+                                        aria-label="Jun, 86. Ánh sáng." style="outline: none;"></path>
+                                    <path fill="gold" d="M 364 466 L 372 466 L 372 474 L 364 474 Z" opacity="1"
+                                        class="highcharts-point" tabindex="-1" role="img"
+                                        aria-label="Jul, 30. Ánh sáng." style="outline: none;"></path>
+                                    <path fill="gold" d="M 421 554 L 429 554 L 429 562 L 421 562 Z" opacity="1"
+                                        class="highcharts-point" tabindex="-1" role="img"
+                                        aria-label="Aug, 17. Ánh sáng." style="outline: none;"></path>
+                                    <path fill="gold" d="M 477 594 L 485 594 L 485 602 L 477 602 Z" opacity="1"
+                                        class="highcharts-point" tabindex="-1" role="img"
+                                        aria-label="Sep, 11. Ánh sáng." style="outline: none;"></path>
+                                    <path fill="gold" d="M 534 325 L 542 325 L 542 333 L 534 333 Z" opacity="1"
+                                        class="highcharts-point" tabindex="-1" role="img"
+                                        aria-label="Oct, 51. Ánh sáng." style="outline: none;"></path>
+                                    <path fill="gold" d="M 591 466 L 599 466 L 599 474 L 591 474 Z" opacity="1"
+                                        class="highcharts-point" tabindex="-1" role="img"
+                                        aria-label="Nov, 30. Ánh sáng." style="outline: none;"></path>
+                                    <path fill="gold" d="M 647 332 L 655 332 L 655 340 L 647 340 Z" opacity="1"
+                                        class="highcharts-point" tabindex="-1" role="img"
+                                        aria-label="Dec, 50. Ánh sáng." style="outline: none;"></path>
+                                </g>
+                            </g>
+                            <g class="highcharts-exporting-group" data-z-index="3" aria-hidden="true">
+                                <g class="highcharts-no-tooltip highcharts-button highcharts-contextbutton"
+                                    stroke-linecap="round" style="cursor: pointer;" transform="translate(731,10)">
+                                    <title>Chart context menu</title>
+                                    <rect fill="#ffffff" class="highcharts-button-box" x="0.5" y="0.5" width="24"
+                                        height="22" rx="2" ry="2" stroke="none" stroke-width="1"></rect>
+                                    <path fill="#666666" d="M 6 6.5 L 20 6.5 M 6 11.5 L 20 11.5 M 6 16.5 L 20 16.5"
+                                        class="highcharts-button-symbol" data-z-index="1" stroke="#666666"
+                                        stroke-width="3"></path><text x="0" data-z-index="1" y="15.5"
+                                        style="color: rgb(51, 51, 51); font-weight: normal; fill: rgb(51, 51, 51);"></text>
+                                </g>
+                            </g>
+                            <g class="highcharts-label highcharts-series-label highcharts-series-label-0 highcharts-color-none"
+                                opacity="1" data-z-index="3" transform="translate(487,457)" aria-hidden="true">
+                                <path fill="none" class="highcharts-label-box" d="M 0 0" stroke="red" stroke-width="1">
+                                </path><text x="0" data-z-index="1" y="12"
+                                    style="color: red; font-weight: bold; fill: red;">Nhiệt độ</text>
+                            </g>
+                            <g class="highcharts-label highcharts-series-label highcharts-series-label-1 highcharts-color-none"
+                                opacity="1" data-z-index="3" transform="translate(673,139)" aria-hidden="true">
+                                <path fill="none" class="highcharts-label-box" d="M 0 0" stroke="darkBlue"
+                                    stroke-width="1"></path><text x="0" data-z-index="1" y="12"
+                                    style="color: darkblue; font-weight: bold; fill: darkblue;">Độ ẩm</text>
+                            </g>
+                            <g class="highcharts-label highcharts-series-label highcharts-series-label-2 highcharts-color-none"
+                                opacity="1" data-z-index="3" transform="translate(648,412)" aria-hidden="true">
+                                <path fill="none" class="highcharts-label-box" d="M 0 0" stroke="gold" stroke-width="1">
+                                </path><text x="0" data-z-index="1" y="12"
+                                    style="color: gold; font-weight: bold; fill: gold;">Ánh sáng</text>
+                            </g><text x="383" text-anchor="middle" class="highcharts-title" data-z-index="4"
+                                style="color: rgb(51, 51, 51); font-size: 18px; fill: rgb(51, 51, 51);" y="24"
+                                aria-hidden="true">BIỂU ĐỒ NHIỆT ĐỘ, ĐỘ ẨM, ÁNH SÁNG TẠI HÀ NỘI NĂM
+                                2022</text><text x="383" text-anchor="middle" class="highcharts-subtitle"
+                                data-z-index="4" style="color: rgb(102, 102, 102); fill: rgb(102, 102, 102);" y="52"
+                                aria-hidden="true"></text><text x="10" text-anchor="start" class="highcharts-caption"
+                                data-z-index="4" style="color: rgb(102, 102, 102); fill: rgb(102, 102, 102);" y="797"
+                                aria-hidden="true"></text>
+                            <g class="highcharts-legend highcharts-no-tooltip" data-z-index="7"
+                                transform="translate(250,759)" aria-hidden="true">
+                                <rect fill="none" class="highcharts-legend-box" rx="0" ry="0" x="0" y="0" width="265"
+                                    height="26"></rect>
+                                <g data-z-index="1">
+                                    <g>
+                                        <g class="highcharts-legend-item highcharts-line-series highcharts-color-undefined highcharts-series-0"
+                                            data-z-index="1" transform="translate(8,3)">
+                                            <path fill="none" d="M 0 11 L 16 11" class="highcharts-graph" stroke="red"
+                                                stroke-width="2"></path>
+                                            <path fill="red"
+                                                d="M 8 15 A 4 4 0 1 1 8.003999999333336 14.999998000000167 Z"
+                                                class="highcharts-point" opacity="1"></path><text x="21"
+                                                text-anchor="start" data-z-index="2" y="15"
+                                                style="color: rgb(51, 51, 51); cursor: pointer; font-size: 12px; font-weight: bold; fill: rgb(51, 51, 51);">Nhiệt
+                                                độ</text>
+                                        </g>
+                                        <g class="highcharts-legend-item highcharts-line-series highcharts-color-undefined highcharts-series-1"
+                                            data-z-index="1" transform="translate(99.3046875,3)">
+                                            <path fill="none" d="M 0 11 L 16 11" class="highcharts-graph"
+                                                stroke="darkBlue" stroke-width="2"></path>
+                                            <path fill="darkBlue" d="M 8 7 L 12 11 L 8 15 L 4 11 Z"
+                                                class="highcharts-point" opacity="1"></path><text x="21" y="15"
+                                                text-anchor="start" data-z-index="2"
+                                                style="color: rgb(51, 51, 51); cursor: pointer; font-size: 12px; font-weight: bold; fill: rgb(51, 51, 51);">Độ
+                                                ẩm</text>
+                                        </g>
+                                        <g class="highcharts-legend-item highcharts-line-series highcharts-color-undefined highcharts-series-2"
+                                            data-z-index="1" transform="translate(179.8921890258789,3)">
+                                            <path fill="none" d="M 0 11 L 16 11" class="highcharts-graph" stroke="gold"
+                                                stroke-width="2"></path>
+                                            <path fill="gold" d="M 4 7 L 12 7 L 12 15 L 4 15 Z" class="highcharts-point"
+                                                opacity="1"></path><text x="21" y="15" text-anchor="start"
+                                                data-z-index="2"
+                                                style="color: rgb(51, 51, 51); cursor: pointer; font-size: 12px; font-weight: bold; fill: rgb(51, 51, 51);">Ánh
+                                                sáng</text>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                            <g class="highcharts-axis-labels highcharts-xaxis-labels" data-z-index="7"
+                                aria-hidden="true"><text x="103.33333333333668" text-anchor="middle"
+                                    transform="translate(0,0)"
+                                    style="color: rgb(102, 102, 102); cursor: default; font-size: 11px; fill: rgb(102, 102, 102);"
+                                    y="744" opacity="1">Jan</text><text x="159.99999999999665" text-anchor="middle"
+                                    transform="translate(0,0)"
+                                    style="color: rgb(102, 102, 102); cursor: default; font-size: 11px; fill: rgb(102, 102, 102);"
+                                    y="744" opacity="1">Feb</text><text x="216.66666666666666" text-anchor="middle"
+                                    transform="translate(0,0)"
+                                    style="color: rgb(102, 102, 102); cursor: default; font-size: 11px; fill: rgb(102, 102, 102);"
+                                    y="744" opacity="1">Mar</text><text x="273.33333333332666" text-anchor="middle"
+                                    transform="translate(0,0)"
+                                    style="color: rgb(102, 102, 102); cursor: default; font-size: 11px; fill: rgb(102, 102, 102);"
+                                    y="744" opacity="1">Apr</text><text x="329.9999999999967" text-anchor="middle"
+                                    transform="translate(0,0)"
+                                    style="color: rgb(102, 102, 102); cursor: default; font-size: 11px; fill: rgb(102, 102, 102);"
+                                    y="744" opacity="1">May</text><text x="386.6666666666667" text-anchor="middle"
+                                    transform="translate(0,0)"
+                                    style="color: rgb(102, 102, 102); cursor: default; font-size: 11px; fill: rgb(102, 102, 102);"
+                                    y="744" opacity="1">Jun</text><text x="443.33333333332666" text-anchor="middle"
+                                    transform="translate(0,0)"
+                                    style="color: rgb(102, 102, 102); cursor: default; font-size: 11px; fill: rgb(102, 102, 102);"
+                                    y="744" opacity="1">Jul</text><text x="499.99999999999665" text-anchor="middle"
+                                    transform="translate(0,0)"
+                                    style="color: rgb(102, 102, 102); cursor: default; font-size: 11px; fill: rgb(102, 102, 102);"
+                                    y="744" opacity="1">Aug</text><text x="556.6666666666666" text-anchor="middle"
+                                    transform="translate(0,0)"
+                                    style="color: rgb(102, 102, 102); cursor: default; font-size: 11px; fill: rgb(102, 102, 102);"
+                                    y="744" opacity="1">Sep</text><text x="613.3333333333267" text-anchor="middle"
+                                    transform="translate(0,0)"
+                                    style="color: rgb(102, 102, 102); cursor: default; font-size: 11px; fill: rgb(102, 102, 102);"
+                                    y="744" opacity="1">Oct</text><text x="669.9999999999966" text-anchor="middle"
+                                    transform="translate(0,0)"
+                                    style="color: rgb(102, 102, 102); cursor: default; font-size: 11px; fill: rgb(102, 102, 102);"
+                                    y="744" opacity="1">Nov</text><text x="726.6666666666666" text-anchor="middle"
+                                    transform="translate(0,0)"
+                                    style="color: rgb(102, 102, 102); cursor: default; font-size: 11px; fill: rgb(102, 102, 102);"
+                                    y="744" opacity="1">Dec</text></g>
+                            <g class="highcharts-axis-labels highcharts-yaxis-labels" data-z-index="7"
+                                aria-hidden="true"><text x="60" text-anchor="end" transform="translate(0,0)"
+                                    style="color: rgb(102, 102, 102); cursor: default; font-size: 11px; fill: rgb(102, 102, 102);"
+                                    y="729" opacity="1">0</text><text x="60" text-anchor="end"
+                                    transform="translate(0,0)"
+                                    style="color: rgb(102, 102, 102); cursor: default; font-size: 11px; fill: rgb(102, 102, 102);"
+                                    y="662" opacity="1">10</text><text x="60" text-anchor="end"
+                                    transform="translate(0,0)"
+                                    style="color: rgb(102, 102, 102); cursor: default; font-size: 11px; fill: rgb(102, 102, 102);"
+                                    y="595" opacity="1">20</text><text x="60" text-anchor="end"
+                                    transform="translate(0,0)"
+                                    style="color: rgb(102, 102, 102); cursor: default; font-size: 11px; fill: rgb(102, 102, 102);"
+                                    y="527" opacity="1">30</text><text x="60" text-anchor="end"
+                                    transform="translate(0,0)"
+                                    style="color: rgb(102, 102, 102); cursor: default; font-size: 11px; fill: rgb(102, 102, 102);"
+                                    y="460" opacity="1">40</text><text x="60" text-anchor="end"
+                                    transform="translate(0,0)"
+                                    style="color: rgb(102, 102, 102); cursor: default; font-size: 11px; fill: rgb(102, 102, 102);"
+                                    y="393" opacity="1">50</text><text x="60" text-anchor="end"
+                                    transform="translate(0,0)"
+                                    style="color: rgb(102, 102, 102); cursor: default; font-size: 11px; fill: rgb(102, 102, 102);"
+                                    y="326" opacity="1">60</text><text x="60" text-anchor="end"
+                                    transform="translate(0,0)"
+                                    style="color: rgb(102, 102, 102); cursor: default; font-size: 11px; fill: rgb(102, 102, 102);"
+                                    y="259" opacity="1">70</text><text x="60" text-anchor="end"
+                                    transform="translate(0,0)"
+                                    style="color: rgb(102, 102, 102); cursor: default; font-size: 11px; fill: rgb(102, 102, 102);"
+                                    y="191" opacity="1">80</text><text x="60" text-anchor="end"
+                                    transform="translate(0,0)"
+                                    style="color: rgb(102, 102, 102); cursor: default; font-size: 11px; fill: rgb(102, 102, 102);"
+                                    y="124" opacity="1">90</text><text x="60" text-anchor="end"
+                                    transform="translate(0,0)"
+                                    style="color: rgb(102, 102, 102); cursor: default; font-size: 11px; fill: rgb(102, 102, 102);"
+                                    y="57" opacity="1">100</text></g><text x="755" class="highcharts-credits"
+                                text-anchor="end" data-z-index="8" y="795"
+                                style="cursor: pointer; color: rgb(153, 153, 153); font-size: 9px; fill: rgb(153, 153, 153);"
+                                aria-label="Chart credits: Highcharts.com" aria-hidden="false">Highcharts.com</text>
+                        </svg>
+                        <div aria-hidden="false" class="highcharts-a11y-proxy-container-after"
+                            style="top: 0px; left: 0px; white-space: nowrap; position: absolute;">
+                            <div class="highcharts-a11y-proxy-group highcharts-a11y-proxy-group-zoom"></div>
+                            <div class="highcharts-a11y-proxy-group highcharts-a11y-proxy-group-legend"
+                                aria-label="Toggle series visibility, BIỂU ĐỒ NHIỆT ĐỘ, ĐỘ ẨM, ÁNH SÁNG TẠI HÀ NỘI NĂM 2022"
+                                role="region">
+                                <ul role="list">
+                                    <li style="list-style: none;"><button class="highcharts-a11y-proxy-button"
+                                            aria-label="Show Nhiệt độ" tabindex="-1" aria-pressed="true"
+                                            style="border-width: 0px; background-color: transparent; cursor: pointer; outline: none; opacity: 0.001; z-index: 999; overflow: hidden; padding: 0px; margin: 0px; display: block; position: absolute; width: 71.3047px; height: 18.4px; left: 258px; top: 692px;"></button>
+                                    </li>
+                                    <li style="list-style: none;"><button class="highcharts-a11y-proxy-button"
+                                            aria-label="Show Độ ẩm" tabindex="-1" aria-pressed="true"
+                                            style="border-width: 0px; background-color: transparent; cursor: pointer; outline: none; opacity: 0.001; z-index: 999; overflow: hidden; padding: 0px; margin: 0px; display: block; position: absolute; width: 58.9875px; height: 18.4px; left: 349px; top: 692px;"></button>
+                                    </li>
+                                    <li style="list-style: none;"><button class="highcharts-a11y-proxy-button"
+                                            aria-label="Show Ánh sáng" tabindex="-1" aria-pressed="true"
+                                            style="border-width: 0px; background-color: transparent; cursor: pointer; outline: none; opacity: 0.001; z-index: 999; overflow: hidden; padding: 0px; margin: 0px; display: block; position: absolute; width: 76.1621px; height: 18.4px; left: 430px; top: 692px;"></button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="highcharts-a11y-proxy-group highcharts-a11y-proxy-group-chartMenu"><button
+                                    class="highcharts-a11y-proxy-button highcharts-no-tooltip"
+                                    aria-label="View chart menu, BIỂU ĐỒ NHIỆT ĐỘ, ĐỘ ẨM, ÁNH SÁNG TẠI HÀ NỘI NĂM 2022"
+                                    aria-expanded="false" title="Chart context menu"
+                                    style="border-width: 0px; background-color: transparent; cursor: pointer; outline: none; opacity: 0.001; z-index: 999; overflow: hidden; padding: 0px; margin: 0px; display: block; position: absolute; width: 24px; height: 22px; left: 732px; top: -61px;"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="highcharts-screen-reader-region-after-562" style="position: relative;" aria-hidden="false">
+                        <div aria-hidden="false"
+                            style="position: absolute; width: 1px; height: 1px; overflow: hidden; white-space: nowrap; clip: rect(1px, 1px, 1px, 1px); margin-top: -3px; opacity: 0.01;">
+                            <div id="highcharts-end-of-chart-marker-562" class="highcharts-exit-anchor" tabindex="0"
+                                aria-hidden="false">End of interactive chart.</div>
+                        </div>
+                    </div>
+                </div>
+                <p class="highcharts-description highcharts-linked-description" aria-hidden="true">
+
+                </p>
+            </figure>
+
+        </div>
+        <div class="col-right">
+            <div class="led1" id="nutall">
+                <h2>CÔNG TẮC 1</h2><br>
+                <img id="myImage" src="bongdensang.png"><br>
+                <button type="myImage" class="btn btn-success" onclick="on()">ON</button>
+                <button type="myImage" class="btn btn-danger" onclick="off()">OFF</button>
+
+            </div> <br>
+            <div class="led2">
+                <h2>CÔNG TẮC 2</h2><br>
+                <img id="led2" src="bongdentoi.png"><br>
+                <label class="switch">
+                    <input onclick="led2()" type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="./main.js"></script>
+</html>
